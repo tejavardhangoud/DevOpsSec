@@ -1,6 +1,8 @@
 name : "FIrt"
 on :
    workflow_dispatch:
+env :
+   VAR_ONE: a
 jobs:
    frstjob:
      runs-on: ubuntu-latest     
@@ -10,6 +12,8 @@ jobs:
        
       - name: variables
         run: echo ${{github.ref}}
+      - name: va
+        run: echo ${{env.VAR_ONE}}
 
 
 
