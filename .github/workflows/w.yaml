@@ -5,7 +5,9 @@ env :
    VAR_ONE: a
 jobs:
    frstjob:
-     runs-on: ubuntu-latest     
+     runs-on: ubuntu-latest
+     env:
+       V: one
      steps:
       - name: print
         run: echo "charger"
@@ -14,7 +16,8 @@ jobs:
         run: echo ${{github.ref}}
       - name: va
         run: echo ${{env.VAR_ONE}}
-
+      - name: c
+        run: echo ${{env.V}}
 
 
 
