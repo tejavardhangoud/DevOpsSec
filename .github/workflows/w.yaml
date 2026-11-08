@@ -7,6 +7,11 @@ jobs:
      
      steps:
       - name: print
-       run: echo "charger"
+        run: echo "charger"
+       
+      - name: variables
+        run: echo ${{github.ref}}
+
+
 
 
