@@ -1,0 +1,12 @@
+name : "FIrt"
+on :
+   workflow_dispatch:
+jobs:
+   frstjob:
+     runs-on: ubuntu-latest
+     
+     steps:
+      - name: print
+       run: echo "charger"
+
+
